@@ -2,7 +2,7 @@
 
 **Digital Forensics — Part of [H3AD-SEC](https://h3ad-sec.github.io)**
 
-H3AD-DF is the digital forensics module of the H3AD-SEC platform, covering forensic analysis tooling and workflows. In development.
+H3AD-DF is the digital forensics module of the H3AD-SEC platform. Registry persistence lookup, malware behavior analysis, and structured forensic workflows for incident response.
 
 Live at: [h3ad-sec.github.io/H3AD-DF](https://h3ad-sec.github.io/H3AD-DF/)
 
@@ -10,7 +10,12 @@ Live at: [h3ad-sec.github.io/H3AD-DF](https://h3ad-sec.github.io/H3AD-DF/)
 
 ## Status
 
-In development. Coming soon.
+Live. 2 tools deployed.
+
+| Tool | Description |
+|------|-------------|
+| [REGSCOPE](https://h3ad-sec.github.io/REGSCOPE/) | Registry key persistence lookup with ATT&CK mapping |
+| [MALBRIEF-AI](https://h3ad-sec.github.io/MALBRIEF-AI/) | Malware behavior analysis, MITRE mapping, detection signatures |
 
 ---
 
@@ -27,5 +32,5 @@ H3AD-DF is one module of the [H3AD-SEC](https://h3ad-sec.github.io) platform.
 | [H3AD-DETECT](https://h3ad-sec.github.io/H3AD-DETECT/) | TRACERULES |
 | [H3AD-HUNT](https://h3ad-sec.github.io/H3AD-HUNT/) | HYPOS, PIVEX, TRACEPULSE |
 | [H3AD-OPS](https://h3ad-sec.github.io/H3AD-OPS/) | QUICKTRACE, SHIFTLOG, PHISHOPS |
-| [H3AD-DF](https://h3ad-sec.github.io/H3AD-DF/) | REGSCOPE |
+| [H3AD-DF](https://h3ad-sec.github.io/H3AD-DF/) | REGSCOPE, MALBRIEF-AI |
 | [H3AD-IR](https://h3ad-sec.github.io/H3AD-IR/) | — |
