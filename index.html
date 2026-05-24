@@ -518,6 +518,15 @@
       border-bottom: 1px solid var(--border);
       padding-bottom: 0.65rem;
       margin: 3rem 0 1.8rem;
+      background: var(--panel); border: 1px solid var(--border); padding: 2px 10px; border-radius: 4px;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    [tabindex]:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
+      border-radius: 3px;
     }
 
     .feat-grid {
@@ -623,6 +632,17 @@
 
     body.nav-compact .nav-links { display: none; }
     body.nav-compact .hamburger { display: flex; }
+
+    @media(max-width:1000px) {
+      .xv-nav-pill { opacity: 1; transform: none; pointer-events: auto; transition: none; }
+    }
+
+    @media(max-width:768px) {
+      .page { padding-left: 1.25rem; padding-right: 1.25rem; }
+      .hero-title { font-size: clamp(1.4rem, 4vw, 2.2rem); }
+      .tool-feature { padding: 22px 20px 16px; }
+      .feat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
 
     @media(max-width:640px) {
       .nav-links { display: none; }
@@ -756,7 +776,7 @@
     }
     .tf-meta {
       font-family: 'Share Tech Mono', monospace;
-      font-size: 0.57rem;
+      font-size: 0.65rem;
       letter-spacing: 0.2em;
       color: var(--muted);
       border-top: 1px solid var(--border-dim);
@@ -853,6 +873,7 @@
   <div class="nav-dropdown"><div class="nav-dropdown-inner">
     <a href="https://h3ad-sec.github.io/QUICKTRACE/" target="_blank" rel="noopener">QUICKTRACE</a>
     <a href="https://h3ad-sec.github.io/SHIFTLOG/" target="_blank" rel="noopener">SHIFTLOG</a>
+    <a href="https://h3ad-sec.github.io/PHISHOPS/" target="_blank" rel="noopener">PHISHOPS</a>
   </div></div>
 </div>
       <div class="nav-item">
@@ -905,6 +926,7 @@
       &nbsp;↗</a>
     <a href="https://h3ad-sec.github.io/QUICKTRACE/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ QUICKTRACE ↗</a>
     <a href="https://h3ad-sec.github.io/SHIFTLOG/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ SHIFTLOG ↗</a>
+    <a href="https://h3ad-sec.github.io/PHISHOPS/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ PHISHOPS ↗</a>
     <a class="nav-current" href="#" onclick="closeDrawer()">H3AD-DF</a>
     <a href="https://h3ad-sec.github.io/REGSCOPE/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ REGSCOPE ↗</a>
     <a href="https://h3ad-sec.github.io/MALBRIEF-AI/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ MALBRIEF-AI ↗</a>
@@ -916,20 +938,19 @@
     <div class="page">
       <section class="hero">
         <span class="hero-tag">DIGITAL FORENSICS MODULE</span>
-        <h1 class="hero-title">Forensic Analysis.<br><span>Coming Soon.</span></h1>
-        <p class="hero-sub">Disk imaging, memory analysis, artifact recovery, and timeline reconstruction — built for incident response workflows. H3AD-DF brings structured forensic methodology to the platform.</p>
-        <div class="status-row"><span class="badge-cs"><span class="dot-pulse"></span>IN DEVELOPMENT</span></div>
+        <h1 class="hero-title">Forensic Analysis.<br><span>Artifact to Root Cause.</span></h1>
+        <p class="hero-sub">Registry persistence lookup, malware behavior analysis, and structured forensic workflows built for incident response. H3AD-DF provides the tooling to go from raw artifact to documented root cause.</p>
+        <div class="status-row"><span class="badge-cs" style="color:var(--status-live);border-color:rgba(0,212,255,0.25);"><span class="dot-pulse"></span>LIVE</span></div>
       </section>
       <div class="terminal">
         <div class="terminal-bar"><span class="tbar-dot r"></span><span class="tbar-dot y"></span><span
             class="tbar-dot g"></span><span class="tbar-label">h3ad@h3ad-df ~ bash</span></div>
         <div class="terminal-body">
           <div class="t-line"><span class="prompt">root@h3ad-df:~$</span><span class="cmd">status</span></div>
-          <div class="t-line gap"><span class="out"><span class="out-acc">H3AD-DF</span><span class="out-dim"> —
-              </span><span class="out-hl">module under active development</span></span></div>
-          <div class="t-line"><span class="prompt">root@h3ad-df:~$</span><span class="cmd">cat mission.txt</span></div>
-          <div class="t-line gap"><span class="out"><span class="out-hl">Understand exactly what happened — from triage
-                artifact to root cause, with evidence preserved and analysis documented.</span></span></div>
+          <div class="t-line gap"><span class="out"><span class="out-acc">H3AD-DF</span><span class="out-dim"> — </span><span class="out-hl">live · 2 tools deployed</span></span></div>
+          <div class="t-line"><span class="prompt">root@h3ad-df:~$</span><span class="cmd">ls tools/</span></div>
+          <div class="t-line"><span class="out"><span class="out-acc">REGSCOPE</span><span class="out-dim"> &nbsp;MALBRIEF-AI</span></span></div>
+          <div class="t-line gap"><span class="out"><span class="out-dim">registry persistence · malware behavior analysis</span></span></div>
           <div class="t-line"><span class="prompt">root@h3ad-df:~$</span><span class="cursor"></span></div>
         </div>
       </div>
