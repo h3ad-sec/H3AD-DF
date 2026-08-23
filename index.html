@@ -834,7 +834,7 @@
       <div class="nav-item"><a href="https://h3ad-sec.github.io/H3AD-X/">H3AD-X</a>
         <div class="nav-dropdown">
           <div class="nav-dropdown-inner"><a href="https://h3ad-sec.github.io/X-VERDIKT/" target="_blank" rel="noopener">X-VERDIKT</a>
-          <div class="nav-dropdown-inner"><a href="https://h3ad-sec.github.io/IOC-VERDIKT/" target="_blank" rel="noopener">IOC-VERDIKT</a>
+            <a href="https://h3ad-sec.github.io/IOC-VERDIKT/" target="_blank" rel="noopener">IOC-VERDIKT</a>
             <a href="https://h3ad-sec.github.io/PARSE-X/" target="_blank" rel="noopener">PARSE-X</a>
             <a href="https://h3ad-sec.github.io/DNSCOPE/" target="_blank" rel="noopener">DNSCOPE</a>
             <a href="https://h3ad-sec.github.io/MAILSCOPE/" target="_blank" rel="noopener">MAILSCOPE</a>
@@ -846,6 +846,7 @@
         <a href="https://h3ad-sec.github.io/H3AD-AI/">H3AD-AI</a>
         <div class="nav-dropdown">
           <div class="nav-dropdown-inner">
+            <a href="https://h3ad-sec.github.io/PROMPTVAULT/" target="_blank" rel="noopener">PROMPTVAULT</a>
           </div>
         </div>
       </div>
@@ -879,7 +880,6 @@
           <a href="https://h3ad-sec.github.io/PHISHBOOK/" target="_blank" rel="noopener">PHISHBOOK</a>
         </div></div>
       </div>
-            <a href="https://h3ad-sec.github.io/docs/">DOCS</a>
       <a href="mailto:h3adsec@gmail.com">CONTACT</a>
     </div>
     <div class="theme-toggle" onclick="toggleTheme()">
@@ -921,7 +921,6 @@
     <a href="https://h3ad-sec.github.io/H3AD-IR/" onclick="closeDrawer()">H3AD-IR
       &nbsp;↗</a>
     <a href="https://h3ad-sec.github.io/PHISHBOOK/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ PHISHBOOK ↗</a>
-        <a href="https://h3ad-sec.github.io/docs/" onclick="closeDrawer()">DOCS</a>
     <a href="mailto:h3adsec@gmail.com" onclick="closeDrawer()">CONTACT</a>
   </div>
   <main>
@@ -930,43 +929,21 @@
         <span class="hero-tag">DIGITAL FORENSICS MODULE</span>
         <h1 class="hero-title">Forensic Analysis.<br><span>Artifact to Root Cause.</span></h1>
         <p class="hero-sub">Registry persistence lookup, malware behavior analysis, and structured forensic workflows built for incident response. H3AD-DF provides the tooling to go from raw artifact to documented root cause.</p>
-        <div class="status-row"><span class="badge-cs" style="color:var(--status-live);border-color:rgba(0,212,255,0.25);"><span class="dot-pulse"></span>LIVE</span></div>
+        <div class="status-row"><span class="badge-cs" style="color:var(--status-partial);border-color:rgba(245,158,11,0.25);"><span class="dot-pulse"></span>COMING SOON</span></div>
       </section>
       <div class="terminal">
         <div class="terminal-bar"><span class="tbar-dot r"></span><span class="tbar-dot y"></span><span
             class="tbar-dot g"></span><span class="tbar-label">h3ad@h3ad-df ~ bash</span></div>
         <div class="terminal-body">
           <div class="t-line"><span class="prompt">root@h3ad-df:~$</span><span class="cmd">status</span></div>
-          <div class="t-line gap"><span class="out"><span class="out-acc">H3AD-DF</span><span class="out-dim"> — </span><span class="out-hl">live · 2 tools deployed</span></span></div>
+          <div class="t-line gap"><span class="out"><span class="out-acc">H3AD-DF</span><span class="out-dim"> — </span><span class="out-hl">tools in development</span></span></div>
           <div class="t-line"><span class="prompt">root@h3ad-df:~$</span><span class="cmd">ls tools/</span></div>
-          <div class="t-line"><span class="out"><span class="out-acc">REGSCOPE</span><span class="out-dim"> &nbsp;MALBRIEF-AI</span></span></div>
-          <div class="t-line gap"><span class="out"><span class="out-dim">registry persistence · malware behavior analysis</span></span></div>
+          <div class="t-line gap"><span class="out"><span class="out-dim">no tools deployed yet</span></span></div>
           <div class="t-line"><span class="prompt">root@h3ad-df:~$</span><span class="cursor"></span></div>
         </div>
       </div>
       <div class="section-label">TOOLS</div>
-
-      <div class="tool-feature">
-        <div class="tf-header">
-          <div class="tf-name">REGSCOPE</div>
-          <span class="card-badge badge-live">LIVE</span>
-        </div>
-        <div class="tf-tagline">Registry Key Persistence Lookup · Instant ATT&CK Mapping</div>
-        <div class="tf-body">Look up any Windows registry key path and get persistence type, ATT&CK sub-technique, associated malware families, and a severity action badge. 85+ entries, stateless, fully offline.</div>
-        <div class="tf-meta" style="margin-top:1rem;">85+ ENTRIES · PREFIX WALK MATCH · ATT&CK TAGGED · STATELESS</div>
-        <a class="tf-link" href="https://h3ad-sec.github.io/REGSCOPE/" target="_blank" rel="noopener">LAUNCH REGSCOPE →</a>
-      </div>
-
-      <div class="tool-feature">
-        <div class="tf-header">
-          <div class="tf-name">MALBRIEF-AI</div>
-          <span class="card-badge badge-live">LIVE</span>
-        </div>
-        <div class="tf-tagline">Malware Classification · MITRE Mapping · Detection Signatures</div>
-        <div class="tf-body">Submit behavioral indicators to an AI analyst and get malware classification, MITRE ATT&CK technique mapping, detection signatures, and hunting pivot recommendations.</div>
-        <div class="tf-meta" style="margin-top:1rem;">MALWARE CLASSIFICATION · MITRE TECHNIQUES · DETECTION SIGNATURES · HUNTING PIVOTS</div>
-        <a class="tf-link" href="https://h3ad-sec.github.io/MALBRIEF-AI/" target="_blank" rel="noopener">LAUNCH MALBRIEF-AI →</a>
-      </div>
+      <p class="hero-sub">No tools are live under H3AD-DF right now. Check back soon.</p>
 
       <div class="back-link"><a href="https://h3ad-sec.github.io/">← Back to H3AD-SEC Platform</a></div>
     </div>
