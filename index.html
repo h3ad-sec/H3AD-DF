@@ -52,6 +52,7 @@
       --status-live: #00d4ff; --status-partial: #f59e0b; --status-soon: #2d3748;
       --red: #ff3b5c; --yellow: #ffd60a; --green: #00d4ff;
       --nav-h: 48px;
+      --border: #1c2333;
       --surface: #111827;
       --text-dim: #a0aec0;
       --border-dim: #161f2e;
@@ -435,136 +436,6 @@
       }
     }
 
-    .terminal {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 32px rgba(0, 0, 0, 0.4);
-      margin-bottom: 2.5rem;
-    }
-
-    body.light .terminal {
-      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-    }
-
-    .terminal-bar {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      padding: 0.7rem 1.1rem;
-      background: var(--panel-alt);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .tbar-dot {
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-    }
-
-    .tbar-dot.r {
-      background: #ff5f57;
-    }
-
-    .tbar-dot.y {
-      background: #febc2e;
-    }
-
-    .tbar-dot.g {
-      background: #28c840;
-    }
-
-    .tbar-label {
-      margin-left: auto;
-      font-size: 0.65rem;
-      color: var(--text-dim);
-      letter-spacing: 0.05em;
-      opacity: 0.5;
-    }
-
-    .terminal-body {
-      padding: 1.5rem 2rem;
-    }
-
-    .t-line {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      margin-bottom: 0.45rem;
-    }
-
-    .t-line.gap {
-      margin-bottom: 1.2rem;
-    }
-
-    .t-line:last-child {
-      margin-bottom: 0;
-    }
-
-    .prompt {
-      color: var(--accent);
-      white-space: nowrap;
-      font-size: 0.8rem;
-      margin-right: 0.6rem;
-      user-select: none;
-    }
-
-    .cmd {
-      color: var(--text);
-      font-size: 0.8rem;
-    }
-
-    .out {
-      width: 100%;
-      padding: 0.15rem 0 0.15rem 1.5rem;
-      font-size: 0.76rem;
-    }
-
-    .out-hl {
-      color: var(--text-dim);
-    }
-
-    .out-acc {
-      color: var(--accent);
-    }
-
-    .out-dim {
-      color: var(--muted);
-    }
-
-    .cursor {
-      display: inline-block;
-      width: 8px;
-      height: 14px;
-      background: var(--accent);
-      vertical-align: middle;
-      margin-left: 2px;
-      animation: blink 1s step-end infinite;
-    }
-
-    @keyframes blink {
-
-      0%,
-      100% {
-        opacity: 1
-      }
-
-      50% {
-        opacity: 0
-      }
-    }
-
-    .section-label {
-      font-size: 0.65rem;
-      letter-spacing: 0.22em;
-      color: var(--muted);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.65rem;
-      margin: 3rem 0 1.8rem;
-      background: var(--panel); border: 1px solid var(--border); padding: 2px 10px; border-radius: 4px;
-    }
-
     a:focus-visible,
     button:focus-visible,
     [tabindex]:focus-visible {
@@ -718,15 +589,6 @@
         padding: calc(var(--nav-h) + 1rem) 1.1rem 4rem;
       }
 
-      .terminal-body {
-        padding: 1.1rem 1.25rem;
-        overflow-x: auto;
-      }
-
-      .terminal {
-        overflow-x: auto;
-      }
-
       .feat-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       }
@@ -752,20 +614,6 @@
       .hero-title {
         font-size: clamp(1.2rem, 7vw, 1.8rem);
         white-space: normal;
-      }
-
-      .terminal-body {
-        padding: 0.9rem 0.9rem;
-        overflow-x: auto;
-      }
-
-      .out {
-        padding-left: 0.75rem;
-        word-break: break-word;
-      }
-
-      .prompt {
-        font-size: 0.72rem;
       }
 
       .status-row {
@@ -988,19 +836,6 @@
           <div class="status-row"><span class="badge-cs" style="color:var(--status-partial);border-color:rgba(245,158,11,0.25);"><span class="dot-pulse"></span>COMING SOON</span></div>
         </div>
       </section>
-      <div class="terminal">
-        <div class="terminal-bar"><span class="tbar-dot r"></span><span class="tbar-dot y"></span><span
-            class="tbar-dot g"></span><span class="tbar-label">h3ad@h3ad-df ~ bash</span></div>
-        <div class="terminal-body">
-          <div class="t-line"><span class="prompt">root@h3ad-df:~$</span><span class="cmd">status</span></div>
-          <div class="t-line gap"><span class="out"><span class="out-acc">H3AD-DF</span><span class="out-dim"> — </span><span class="out-hl">tools in development</span></span></div>
-          <div class="t-line"><span class="prompt">root@h3ad-df:~$</span><span class="cmd">ls tools/</span></div>
-          <div class="t-line gap"><span class="out"><span class="out-dim">no tools deployed yet</span></span></div>
-          <div class="t-line"><span class="prompt">root@h3ad-df:~$</span><span class="cursor"></span></div>
-        </div>
-      </div>
-      <div class="section-label">TOOLS</div>
-      <p class="hero-sub">No tools are live under H3AD-DF right now. Check back soon.</p>
 
       <div class="back-link"><a href="https://h3ad-sec.github.io/">← Back to H3AD-SEC Platform</a></div>
     </div>
