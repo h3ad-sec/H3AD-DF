@@ -43,29 +43,49 @@
   </script>
   <style>
     :root {
-      --bg: #080c14; --panel: #0d1117; --panel-alt: #111827;
-      --border: #1c2333; --text: #e6edf3; --muted: #6b7280;
-      --accent: #00d4ff; --primary: #00d4ff;
+      --bg: #080c14; --panel: #0d1117; --panel-alt: #111827; --panel2: #111827;
+      --text: #e6edf3; --muted: #8b949e;
+      --accent: #00d4ff; --accent2: #3b82f6;
+      --primary: #00d4ff;
       --primary-dim: rgba(0, 212, 255, 0.08);
       --primary-glow: rgba(0, 212, 255, 0.18);
       --status-live: #00d4ff; --status-partial: #f59e0b; --status-soon: #2d3748;
+      --red: #ff3b5c; --yellow: #ffd60a; --green: #00d4ff;
       --nav-h: 48px;
       --surface: #111827;
       --text-dim: #a0aec0;
       --border-dim: #161f2e;
+      --mono: 'Share Tech Mono', monospace;
+      --sans: 'Exo 2', sans-serif;
       --ui: 'IBM Plex Sans', sans-serif;
-      --fs-xs: 11px;
+      --fs-xs: 11px; --fs-sm: 13px; --fs-base: 15px; --fs-md: 16px; --fs-lg: 18px;
     }
 
     body.light {
-      --bg: #f8fafc; --panel: #ffffff; --panel-alt: #f1f5f9;
-      --border: #e2e8f0; --text: #0d1117; --muted: #5c6b8a;
-      --accent: #0284c7; --primary: #0284c7;
-      --primary-dim: rgba(2, 132, 199, 0.07);
-      --status-live: #0284c7; --status-partial: #d97706;
-      --surface: #f1f5f9;
-      --text-dim: #334155;
-      --border-dim: #e2e8f0;
+      --bg: #D3D7DC;
+      --panel: #DADDE1;
+      --panel-alt: #C9CDD2;
+      --panel2: #C9CDD2;
+      --text: #000000;
+      --muted: #2E343B;
+      --accent: #0A6EA8;
+      --accent2: #C2540E;
+      --border: #BBC0C6;
+      --primary: #0A6EA8;
+      --primary-dim: rgba(10, 110, 168, 0.07);
+      --primary-glow: rgba(10, 110, 168, 0.14);
+      --status-live: #0A6EA8;
+      --status-partial: #B45309;
+      --status-soon: #AEB4BB;
+      --red: #DC2626; --yellow: #B45309; --green: #059669;
+      --surface: #C9CDD2;
+      --text-dim: #2E343B;
+      --border-dim: #BBC0C6;
+      font-weight: 500;
+    }
+    body.light .hero-sub,
+    body.light .tf-body {
+      font-weight: 400;
     }
 
     *,
@@ -118,7 +138,7 @@
     }
 
     body.light .nav {
-      background: rgba(242, 245, 250, 0.9);
+      background: rgba(211, 215, 220, 0.9);
     }
 
     .nav-brand {
@@ -334,53 +354,43 @@
     }
 
     .hero {
-      padding: 3rem 0 2rem;
-    }
-
-    .hero-tag {
-      font-family: 'Share Tech Mono', monospace;
-      font-size: 0.6rem;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--accent);
-      opacity: 0.75;
-      display: block;
-      margin-bottom: 1rem;
+      padding: 0.5rem 0 2rem;
     }
 
     .hero-title {
-      font-family: 'Exo 2', sans-serif;
+      font-family: var(--sans);
       font-weight: 700;
-      font-size: clamp(1.4rem, 4vw, 2.6rem);
+      font-size: clamp(22px, 4vw, 34px);
       color: var(--text);
-      letter-spacing: 0.04em;
-      line-height: 1.3;
-      margin-bottom: 1rem;
+      line-height: 1.25;
+      margin-bottom: 10px;
     }
 
     .hero-title span {
       color: var(--accent);
-      text-shadow: 0 0 32px rgba(0, 212, 255, 0.4);
-    }
-
-    body.light .hero-title span {
-      text-shadow: 0 0 24px rgba(2, 132, 199, 0.35);
     }
 
     .hero-sub {
-      font-family: 'Exo 2', sans-serif;
-      font-weight: 300;
-      font-size: 0.74rem;
-      color: var(--text-dim);
-      line-height: 1.9;
-      max-width: 620px;
+      font-family: var(--ui);
+      font-size: var(--fs-sm);
+      color: var(--muted);
+      max-width: 640px;
+      line-height: 1.6;
+      margin-bottom: 18px;
     }
+
+    .hero-banner { display: flex; justify-content: center; align-items: baseline; gap: 2px; font-family: var(--sans); font-weight: 700; font-size: clamp(26px, 5vw, 42px); letter-spacing: 4px; }
+    .hero-banner-tagline { text-align: center; font-family: var(--sans); font-size: var(--fs-xs); color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-top: -6px; }
+    .hero-banner-by { text-align: center; font-family: var(--ui); font-weight: 600; font-size: var(--fs-sm); color: var(--accent); letter-spacing: 1px; margin-bottom: 18px; }
+    .hero-intro { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 700px; margin: 0 auto; }
+    .hero-intro .hero-title, .hero-intro .hero-sub { margin-left: auto; margin-right: auto; }
 
     .status-row {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 1rem;
-      margin: 1.5rem 0 2rem;
+      margin: 0 0 0.5rem;
       flex-wrap: wrap;
     }
 
@@ -762,9 +772,9 @@
         margin: 1rem 0 1.5rem;
       }
 
-      .xv-nav-pill {
-        display: none;
-      }
+      .nav-brand { margin-right: 0.6rem; }
+      .xv-pill-tagline { display: none; }
+      .xv-nav-pill { margin-left: 6px; padding-left: 6px; }
     }
 
     @media(max-width:360px) {
@@ -826,7 +836,7 @@
     .tf-body {
       font-family: 'Exo 2', sans-serif;
       font-weight: 400;
-      font-size: 0.71rem;
+      font-size: var(--fs-sm);
       color: var(--text-dim);
       line-height: 1.8;
       max-width: 600px;
@@ -969,10 +979,14 @@
   <main>
     <div class="page">
       <section class="hero">
-        <span class="hero-tag">DIGITAL FORENSICS MODULE</span>
-        <h1 class="hero-title">Forensic Analysis.<br><span>Artifact to Root Cause.</span></h1>
-        <p class="hero-sub">Registry persistence lookup, malware behavior analysis, and structured forensic workflows built for incident response. H3AD-DF provides the tooling to go from raw artifact to documented root cause.</p>
-        <div class="status-row"><span class="badge-cs" style="color:var(--status-partial);border-color:rgba(245,158,11,0.25);"><span class="dot-pulse"></span>COMING SOON</span></div>
+        <div class="hero-banner"><span class="xv-pill-accent">H3AD</span><span class="xv-pill-text">-DF</span></div>
+        <div class="hero-banner-tagline">DIGITAL FORENSICS MODULE</div>
+        <div class="hero-banner-by">by H3AD</div>
+        <div class="hero-intro">
+          <h1 class="hero-title">Forensic Analysis.<br><span>Coming Soon.</span></h1>
+          <p class="hero-sub">Registry persistence lookup, memory forensics, and disk artifact analysis: structured forensic workflows for incident response. Nothing is live yet. H3AD-DF ships its first tools here as they're ready.</p>
+          <div class="status-row"><span class="badge-cs" style="color:var(--status-partial);border-color:rgba(245,158,11,0.25);"><span class="dot-pulse"></span>COMING SOON</span></div>
+        </div>
       </section>
       <div class="terminal">
         <div class="terminal-bar"><span class="tbar-dot r"></span><span class="tbar-dot y"></span><span
