@@ -9,19 +9,19 @@
   <meta http-equiv="Expires" content="0">
   <title>H3AD-DF - Digital Forensics // H3AD-SEC</title>
   <meta name="description"
-    content="H3AD-DF by H3AD-SEC - Digital forensics workflows, artifact collection guides, memory forensics, and disk analysis toolkits. ARTIFEKTX, a Windows DFIR artifact reference, is live now.">
+    content="H3AD-DF by H3AD-SEC - Digital forensics workflows, artifact collection guides, memory forensics, and disk analysis toolkits. ARTIFEKTX (Windows DFIR artifact reference) and CHRONIFY (forensic timestamp converter) are live now.">
   <link rel="canonical" href="https://h3ad-sec.github.io/H3AD-DF/">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="H3AD-SEC">
   <meta property="og:url" content="https://h3ad-sec.github.io/H3AD-DF/">
   <meta property="og:title" content="H3AD-DF - Digital Forensics">
-  <meta property="og:description" content="H3AD-DF by H3AD-SEC - Digital forensics workflows, artifact collection guides, memory forensics, and disk analysis toolkits. ARTIFEKTX, a Windows DFIR artifact reference, is live now.">
+  <meta property="og:description" content="H3AD-DF by H3AD-SEC - Digital forensics workflows, artifact collection guides, memory forensics, and disk analysis toolkits. ARTIFEKTX (Windows DFIR artifact reference) and CHRONIFY (forensic timestamp converter) are live now.">
   <meta property="og:image" content="https://raw.githubusercontent.com/h3ad-sec/h3ad-sec.github.io/main/logo-dark.png">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="H3AD-DF - Digital Forensics">
-  <meta name="twitter:description" content="H3AD-DF by H3AD-SEC - Digital forensics workflows, artifact collection guides, memory forensics, and disk analysis toolkits. ARTIFEKTX, a Windows DFIR artifact reference, is live now.">
+  <meta name="twitter:description" content="H3AD-DF by H3AD-SEC - Digital forensics workflows, artifact collection guides, memory forensics, and disk analysis toolkits. ARTIFEKTX (Windows DFIR artifact reference) and CHRONIFY (forensic timestamp converter) are live now.">
   <meta name="twitter:image" content="https://raw.githubusercontent.com/h3ad-sec/h3ad-sec.github.io/main/logo-dark.png">
 
   <meta name="theme-color" content="#080c14">
@@ -32,7 +32,7 @@
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "H3AD-DF - Digital Forensics // H3AD-SEC",
-    "description": "H3AD-DF by H3AD-SEC - Digital forensics workflows, artifact collection guides, memory forensics, and disk analysis toolkits. ARTIFEKTX, a Windows DFIR artifact reference, is live now.",
+    "description": "H3AD-DF by H3AD-SEC - Digital forensics workflows, artifact collection guides, memory forensics, and disk analysis toolkits. ARTIFEKTX (Windows DFIR artifact reference) and CHRONIFY (forensic timestamp converter) are live now.",
     "url": "https://h3ad-sec.github.io/H3AD-DF/",
     "isPartOf": {
       "@type": "WebSite",
@@ -818,10 +818,23 @@
         <a href="https://h3ad-sec.github.io/H3AD-DF/" class="nav-current">H3AD-DF</a>
         <div class="nav-dropdown"><div class="nav-dropdown-inner">
           <a href="https://h3ad-sec.github.io/ARTIFEKTX/" target="_blank" rel="noopener">ARTIFEKTX</a>
+          <a href="https://h3ad-sec.github.io/CHRONIFY/" target="_blank" rel="noopener">CHRONIFY</a>
         </div></div>
       </div>
       <a href="https://h3ad-sec.github.io/H3AD-IR/">H3AD-IR</a>
-      <a href="https://h3ad-sec.github.io/H3AD-LEARN/">H3AD-LEARN</a>
+      <div class="nav-item">
+        <a href="https://h3ad-sec.github.io/H3AD-LEARN/">H3AD-LEARN</a>
+        <div class="nav-dropdown"><div class="nav-dropdown-inner">
+          <a href="https://h3ad-sec.github.io/H3AD-LEARN/fundamentals/" target="_blank" rel="noopener">FUNDAMENTALS</a>
+          <a href="https://h3ad-sec.github.io/H3AD-LEARN/networking/" target="_blank" rel="noopener">NETWORKING</a>
+          <a href="https://h3ad-sec.github.io/H3AD-LEARN/windows/" target="_blank" rel="noopener">WINDOWS</a>
+          <a href="https://h3ad-sec.github.io/H3AD-LEARN/threat-hunting/" target="_blank" rel="noopener">THREAT HUNTING</a>
+          <a href="https://h3ad-sec.github.io/H3AD-LEARN/lolbas/" target="_blank" rel="noopener">LOLBAS</a>
+          <a href="https://h3ad-sec.github.io/H3AD-LEARN/threat-intel/" target="_blank" rel="noopener">THREAT INTEL</a>
+          <a href="https://h3ad-sec.github.io/H3AD-LEARN/cloud-security/" target="_blank" rel="noopener">CLOUD SECURITY</a>
+          <a href="https://h3ad-sec.github.io/H3AD-LEARN/interview-prep/" target="_blank" rel="noopener">INTERVIEW PREP</a>
+        </div></div>
+      </div>
       <div class="nav-divider"></div>
       <a href="mailto:h3adsec@gmail.com">CONTACT</a>
     </div>
@@ -832,7 +845,7 @@
     </div>
   </nav>
   <div class="nav-drawer" id="navDrawer">
-            <a href="https://h3ad-sec.github.io/H3AD/" onclick="closeDrawer()">H3AD</a>
+                <a href="https://h3ad-sec.github.io/H3AD/" onclick="closeDrawer()">H3AD</a>
     <a href="https://h3ad-sec.github.io/H3AD-X/" onclick="closeDrawer()">H3AD-X</a>
     <a href="https://h3ad-sec.github.io/IOC-VERDIKT/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ IOC-VERDIKT ↗</a>
     <a href="https://h3ad-sec.github.io/PARSE-X/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ PARSE-X ↗</a>
@@ -853,8 +866,17 @@
     <a href="https://h3ad-sec.github.io/PHISHOPS/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ PHISHOPS ↗</a>
     <a href="https://h3ad-sec.github.io/H3AD-DF/" onclick="closeDrawer()" class="nav-current">H3AD-DF</a>
     <a href="https://h3ad-sec.github.io/ARTIFEKTX/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ ARTIFEKTX ↗</a>
+    <a href="https://h3ad-sec.github.io/CHRONIFY/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ CHRONIFY ↗</a>
     <a href="https://h3ad-sec.github.io/H3AD-IR/" onclick="closeDrawer()">H3AD-IR</a>
     <a href="https://h3ad-sec.github.io/H3AD-LEARN/" onclick="closeDrawer()">H3AD-LEARN</a>
+    <a href="https://h3ad-sec.github.io/H3AD-LEARN/fundamentals/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ FUNDAMENTALS ↗</a>
+    <a href="https://h3ad-sec.github.io/H3AD-LEARN/networking/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ NETWORKING ↗</a>
+    <a href="https://h3ad-sec.github.io/H3AD-LEARN/windows/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ WINDOWS ↗</a>
+    <a href="https://h3ad-sec.github.io/H3AD-LEARN/threat-hunting/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ THREAT HUNTING ↗</a>
+    <a href="https://h3ad-sec.github.io/H3AD-LEARN/lolbas/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ LOLBAS ↗</a>
+    <a href="https://h3ad-sec.github.io/H3AD-LEARN/threat-intel/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ THREAT INTEL ↗</a>
+    <a href="https://h3ad-sec.github.io/H3AD-LEARN/cloud-security/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ CLOUD SECURITY ↗</a>
+    <a href="https://h3ad-sec.github.io/H3AD-LEARN/interview-prep/" target="_blank" rel="noopener" onclick="closeDrawer()" class="drawer-sub">↳ INTERVIEW PREP ↗</a>
     <a href="mailto:h3adsec@gmail.com" onclick="closeDrawer()">CONTACT</a>
   </div>
   <main>
@@ -865,12 +887,12 @@
         <div class="hero-banner-by">by H3AD</div>
         <div class="hero-intro">
           <h1 class="hero-title">Forensic Analysis.<br><span>Know Your Artifacts.</span></h1>
-          <p class="hero-sub">Registry persistence lookup, memory forensics, and disk artifact analysis: structured forensic workflows for incident response. ARTIFEKTX ships first as a fast, on-the-go reference for Windows artifacts. More tools land here as they're ready.</p>
+          <p class="hero-sub">Registry persistence lookup, memory forensics, and disk artifact analysis: structured forensic workflows for incident response. ARTIFEKTX is a fast, on-the-go reference for Windows artifacts; CHRONIFY converts between every timestamp format you'll hit during timeline analysis. More tools land here as they're ready.</p>
           <div class="status-block">
             <div class="status-dot partial"></div>
             <span class="status-text partial">PARTIAL</span>
             <span class="status-sep">//</span>
-            <span class="status-meta">ARTIFEKTX LIVE · MORE TOOLS COMING</span>
+            <span class="status-meta">ARTIFEKTX + CHRONIFY LIVE · MORE TOOLS COMING</span>
           </div>
         </div>
       </section>
@@ -889,6 +911,20 @@
         <div class="tf-body">Fast, on-the-go reference for Windows forensic artifacts: registry hives, execution evidence, persistence, browser activity, memory, network, and event logs. What each one records, what normal looks like, and what to flag.</div>
         <div class="tf-meta">134 ARTIFACTS · ATT&CK MAPPED · ANOMALY CALLOUTS</div>
         <a class="tf-link" href="https://h3ad-sec.github.io/ARTIFEKTX/" target="_blank" rel="noopener">LAUNCH ARTIFEKTX →</a>
+      </div>
+
+      <div class="tool-feature" style="--tf-rgb:0,212,255;">
+        <div class="tf-header">
+          <div class="tf-icon">CY</div>
+          <div class="tf-header-text">
+            <div class="tf-name">CHRONIFY</div>
+            <div class="tf-tagline">Forensic Timestamp Converter</div>
+          </div>
+          <span class="card-badge badge-live">LIVE</span>
+        </div>
+        <div class="tf-body">Convert between every timestamp format you'll hit in DFIR work: Unix, Windows FILETIME, .NET Ticks, Chrome/WebKit, Mac Absolute, HFS+, DOS, Excel/OLE, Julian, GPS, RFC 2822. Single-value sync, direct format-to-format, batch lists, and a duration calculator.</div>
+        <div class="tf-meta">16 FORMATS · 4 MODES · BATCH + DIRECT CONVERT</div>
+        <a class="tf-link" href="https://h3ad-sec.github.io/CHRONIFY/" target="_blank" rel="noopener">LAUNCH CHRONIFY →</a>
       </div>
 
       <div class="back-link"><a href="https://h3ad-sec.github.io/">← Back to H3AD-SEC Platform</a></div>
